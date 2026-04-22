@@ -236,7 +236,7 @@ pip install mouseinfo
 ### 1. Clone The Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/NoelisTired/HayDay
 cd HayDay
 ```
 
