@@ -1,3 +1,13 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.ovpn
+*.pem
+*.key
+*credentials*
+secrets*
+
 # Python
 __pycache__/
 *.py[cod]

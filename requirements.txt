@@ -1,0 +1,7 @@
+# Runtime dependencies for the HayDay bot.
+# ADB itself (adb.exe) is an external tool, not a pip package — see README.
+opencv-python>=4.5
+numpy>=1.21
+
+# For the test suite:
+# pytest>=7.0   (see requirements-dev.txt)

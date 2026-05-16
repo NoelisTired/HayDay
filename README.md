@@ -287,6 +287,16 @@ Before running:
 - make sure the field is actually in frame
 - keep the emulator state consistent between test runs
 
+## Installing Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs `opencv-python` and `numpy`. ADB (`adb.exe`) is a separate
+external tool — install the Android platform-tools and point `ADB_PATH`
+at it (see Configuration Reference).
+
 ## Running The Bot
 
 Once configured:
@@ -296,6 +306,18 @@ python memu_bot.py
 ```
 
 The debug viewer should open and the bot will log each step as it progresses.
+
+## Tests
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+The suite covers the drag-path geometry (`straight_line`, `zigzag_path`)
+— the deterministic math the planting accuracy depends on. The ADB,
+OpenCV detection and emulator layers are not unit-tested; they need a
+live emulator and are exercised manually via the debug viewer.
 
 ## Output And Debugging
 
